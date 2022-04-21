@@ -20,15 +20,10 @@
         "id":"web4"
     },
     {
-        "img": "work_pict.jpg",
-        "title": "律師官網",
-        "id":"web5"
-    },
-    {
         "img": "DosportWebCover.jpg",
         "title": "搞運彩",
-        "id":"web6"
-    },
+        "id":"web5"
+    }
     
     
 ]
