@@ -33,8 +33,26 @@
                 "img": "graphicMr.HeCover.jpg",
                 "title": "小賀老師Logo Design",
                  "id":"graphic6"
+            },
+            
+            
+        ],
+
+        "graphic creat":[
+            
+             {
+                "img": "graphicDigitalflower.jpg",
+                "title": "數據花",
+                 "id":"graphic7"
+            },
+            {
+                "img": "graphicmimosapudicaposter.jpg",
+                "title": "含羞草",
+                 "id":"graphic8"
             }
             
             
         ]
+
+
 }
