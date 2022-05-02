@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YLB2J7V3Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0YLB2J7V3Y');
+    </script>
+</head>
+
+<body>
+     <div class="fixed">
+        <div id="nav">
+        <!--這是導覽列 -->
+        </div>
+    </div>
+    
+    <div class="work_header">
+        <img src="img/work_header.png" alt="">
+    </div>
+    <div class="work_body">
+        <div class="work_container work_body">
+            <div class="row text-center">
+                <h1 class="work_title">
+                    <img src="img/Lollipop.svg">
+                    專案
+                    <img class="Lollipop" src="img/Lollipop.svg">
+                </h1>
+            </div>
+            <div id="project" class="row text-center">
+            </div>
+
+            <div class="row text-center">
+                <h1 class="work_title">
+                    <img src="img/Lollipop.svg">
+                    專案
+                    <img class="Lollipop" src="img/Lollipop.svg">
+                </h1>
+            </div>
+
+            <div id="graphic" class="row text-center">
+            </div>
+
+            <div class="row text-center">
+                <h1 class="work_title">
+                    <img src="img/Lollipop.svg">
+                    專案
+                    <img class="Lollipop" src="img/Lollipop.svg">
+                </h1>
+            </div>
+
+            <div id="graphicCreat" class="row text-center">
+            </div>
+        </div>
+        
+
+        &nbsp;
+    </div>
+
+    <div id="footer">
+        Copyright © 2022 Julia. All rights reserved
+    </div>
+    
+    <!-- 大圖 -->
+    <div id="graphicCreatDemo"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+     function closeCard(del) {
+        let  closeId=document.getElementById(del)
+		if (closeId.classList.contains("show")) {
+			closeId.classList.remove("show");
+		}
+        
+	}
+    let project =document.getElementById("project");
+    let ProjectHtml="";
+
+    let graphic = document.getElementById("graphic");
+    let graphicHtml="";
+
+    let graphicCreat = document.getElementById("graphicCreat");
+    let graphicCreatHtml="";
+    let graphicCreatDemo=document.getElementById("graphicCreatDemo");
+    let graphicCreatDemoHtml="";
+
+    axios.get('./api/webGraphic.json').then(res=>{
+        console.log(res.data)
+        //Project
+        res.data.project.forEach(item => {
+            ProjectHtml+=`<div class="col-12 col-sm-6 col-lg-4 work_item" onclick="window.location='work_illustPage.html?${item.id}';">
+                    <div class="work_pict">
+                        <div class="cloudT">
+                            <img src="img/cloud_top.png" alt="">
+                        </div>
+                        <div class="cloudB">
+                            <img src="img/cloud_bottom.png" alt="">
+                        </div>
+                        <div class="pink_block"></div>
+                        <div class="icon_pc">
+                            <img src="img/icon_pc.png" alt="">
+                            <p>網頁設計</p>
+                        </div>
+                        
+                        <img class="main_pic" src="img/${item.img}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="work_p">${item.title}</h3>
+                        <div class="pink_line">
+
+                        </div>
+                    </div>
+                    
+                </div>`
+        });
+        project.innerHTML=ProjectHtml;
+
+        //graphic
+        res.data.graphic.forEach(item => {
+            graphicHtml+=`
+            <div class="col-12 col-sm-6 col-lg-4 work_item" onclick="window.location='work_illustPage.html?${item.id}';">
+                    <div class="work_pict">
+                        <div class="cloudT">
+                            <img src="img/cloud_top.png" alt="">
+                        </div>
+                        <div class="cloudB">
+                            <img src="img/cloud_bottom.png" alt="">
+                        </div>
+                        <div class="pink_block"></div>
+                        <div class="icon_pc">
+                            <img src="img/icon_pc.png" alt="">
+                            <p>網頁設計</p>
+                        </div>
+                        
+                        <img class="main_pic" src="img/Graphic/${item.img}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="work_p">${item.title}</h3>
+                        <div class="pink_line">
+
+                        </div>
+                    </div>
+                    
+                </div>`
+        });
+        graphic.innerHTML=graphicHtml;
+
+        //graphicCreat
+        res.data.graphicCreat.forEach(item => {
+            graphicCreatHtml+=`<div class="col-12 col-sm-6 col-lg-4 work_item"  data-bs-toggle="collapse" data-bs-target="#${item.id}">
+                    <div class="work_illust">
+                        <img src="img/Graphic/${item.img}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="work_p">${item.title}</h3>
+                        <div class="pink_line">
+
+                        </div>
+                    </div>
+                    
+                </div>`
+                graphicCreatDemoHtml+=`
+                <div id="${item.id}" class="Card collapse" >
+                    <img src="img/close.svg" alt="" onclick="closeCard('${item.id}');" class="CardClose">
+                    <div class="card_row">
+                        <div class="CardLargeImg">
+                            <img src="img/Graphic/${item.img}" alt="">
+                        </div>
+                        <div class="CardTitle">
+                            <h3>${item.title}</h3>
+                        </div>
+                    </div>
+
+                </div>
+                
+            `
+        });
+        graphicCreat.innerHTML=graphicCreatHtml;
+        graphicCreatDemo.innerHTML=graphicCreatDemoHtml;
+
+        
+     })
+
+
+    
+</script>
+
+</html>

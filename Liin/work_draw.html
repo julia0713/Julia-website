@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插畫設計</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YLB2J7V3Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0YLB2J7V3Y');
+    </script>
+</head>
+
+<body>
+     <div class="fixed">
+        <div id="nav">
+        <!--這是導覽列 -->
+        </div>
+    </div>
+    
+    <div class="work_header">
+        <img src="img/work_header.png" alt="">
+    </div>
+
+    <div class="work_body">
+        <div class="work_container work_body">
+            <div class="row text-center">
+                <h1 class="work_title">
+                    <img src="img/Lollipop.svg">
+                    插畫設計-hippo
+                    <img class="Lollipop" src="img/Lollipop.svg">
+                </h1>
+            </div>
+            <div id="hippo" class="row text-center">
+
+            </div>
+            <div class="row text-center">
+                <h1 class="work_title">
+                    <img src="img/Lollipop.svg">
+                    插畫設計-penDraw
+                    <img class="Lollipop" src="img/Lollipop.svg">
+                </h1>
+            </div>
+            <div id="penDraw" class="row text-center">
+
+            </div>
+            <div class="row text-center">
+                <h1 class="work_title">
+                    <img src="img/Lollipop.svg">
+                    插畫設計-paint
+                    <img class="Lollipop" src="img/Lollipop.svg">
+                </h1>
+            </div>
+            <div id="paint" class="row text-center">
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="footer">
+        Copyright © 2022 Julia. All rights reserved
+    </div>
+
+
+    <div id="hippoDemo"></div>
+    <div id="penDrawDemo"></div>
+    <div id="paintDemo"></div>
+
+    <!-- <div id="webdraw1" class="Card" >
+        <img src="img/close.svg" alt="" onclick="closeCard(webdraw1);" class="CardClose">
+        <div class="card_row">
+            <div class="CardLargeImg">
+                <img src="img/test1/iEstateWebCover.jpg" alt="">
+            </div>
+            <div class="CardTitle">
+                <h3>我是標題</h3>
+            </div>
+        </div>
+
+    </div> -->
+
+    
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    
+    
+    function closeCard(del) {
+        let  closeId=document.getElementById(del)
+		if (closeId.classList.contains("show")) {
+			closeId.classList.remove("show");
+		}
+        
+	}
+    
+    //hippo
+    let hippo =document.getElementById("hippo");
+    let hippoHtml="";
+    let hippoDemo =document.getElementById("hippoDemo");
+    let hippoDemoHtml="";
+    let penDraw =document.getElementById("penDraw");
+    let penDrawHtml="";
+    let penDrawDemo =document.getElementById("penDrawDemo")
+    let penDrawDemoHtml="";
+    let paint =document.getElementById("paint");
+    let paintHtml="";
+    let paintDemo =document.getElementById("paintDemo");
+    let paintDemoHtml="";
+    
+     axios.get('./api/webDraw.json').then(res=>{
+        console.log(res.data)
+
+        
+
+        res.data.hippo.forEach(item => {
+            //onclick="openCard('${item.id}'); 
+            hippoHtml+=`<div class="col-12 col-sm-6 col-lg-4 work_item"  data-bs-toggle="collapse" data-bs-target="#${item.id}">
+                    <div class="work_illust">
+                        <img src="img/drawWork/${item.img}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="work_p">${item.title}</h3>
+                        <div class="pink_line">
+
+                        </div>
+                    </div>
+                    
+                </div>`;
+            hippoDemoHtml+=`
+                <div id="${item.id}" class="Card collapse" >
+                    <img src="img/close.svg" alt="" onclick="closeCard('${item.id}');" class="CardClose">
+                    <div class="card_row">
+                        <div class="CardLargeImg">
+                            <img src="img/drawWork/${item.img}" alt="">
+                        </div>
+                        <div class="CardTitle">
+                            <h3>${item.title}</h3>
+                        </div>
+                    </div>
+
+                </div>
+                
+            `
+            
+        });
+        hippo.innerHTML=hippoHtml;
+        hippoDemo.innerHTML=hippoDemoHtml;
+        
+
+        
+    //penDraw
+    
+        res.data.penDraw.forEach(item => {
+            penDrawHtml+=`<div class="col-12 col-sm-6 col-lg-4 work_item"  data-bs-toggle="collapse" data-bs-target="#${item.id}">
+                    <div class="work_illust">
+                        <img src="img/drawWork/${item.img}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="work_p">${item.title}</h3>
+                        <div class="pink_line">
+
+                        </div>
+                    </div>
+                    
+                </div>`
+
+            penDrawDemoHtml+=`
+                <div id="${item.id}" class="Card collapse" >
+                    <img src="img/close.svg" alt="" onclick="closeCard('${item.id}');" class="CardClose">
+                    <div class="card_row">
+                        <div class="CardLargeImg">
+                            <img src="img/drawWork/${item.img}" alt="">
+                        </div>
+                        <div class="CardTitle">
+                            <h3>${item.title}</h3>
+                        </div>
+                    </div>
+
+                </div>
+                
+            `
+        });
+        penDraw.innerHTML=penDrawHtml;
+        penDrawDemo.innerHTML=penDrawDemoHtml;
+  
+
+     // paint
+
+        res.data.paint.forEach(item => {
+            paintHtml+=`<div class="col-12 col-sm-6 col-lg-4 work_item"  data-bs-toggle="collapse" data-bs-target="#${item.id}">
+                    <div class="work_illust">
+                        <img src="img/drawWork/${item.img}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="work_p">${item.title}</h3>
+                        <div class="pink_line">
+
+                        </div>
+                    </div>
+                    
+                </div>`
+            paintDemoHtml+=`
+                <div id="${item.id}" class="Card collapse" >
+                    <img src="img/close.svg" alt="" onclick="closeCard('${item.id}');" class="CardClose">
+                    <div class="card_row">
+                        <div class="CardLargeImg">
+                            <img src="img/drawWork/${item.img}" alt="">
+                        </div>
+                        <div class="CardTitle">
+                            <h3>${item.title}</h3>
+                        </div>
+                    </div>
+
+                </div>
+                
+            `
+        });
+        paint.innerHTML=paintHtml;
+        paintDemo.innerHTML=paintDemoHtml;
+
+
+
+     })
+
+     
+</script>
+
+
+</body>
+
+</html>
+
+
