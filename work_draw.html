@@ -20,7 +20,7 @@
 </head>
 
 <body>
-     <div class="fixed">
+    <div class="fixed">
         <div id="nav">
         <!--這是導覽列 -->
         </div>
@@ -35,7 +35,7 @@
             <div class="row text-center">
                 <h1 class="work_title">
                     <img src="img/lollipop.svg">
-                    河馬系列
+                    插畫設計-hippo
                     <img class="Lollipop" src="img/lollipop.svg">
                 </h1>
             </div>
@@ -45,7 +45,7 @@
             <div class="row text-center">
                 <h1 class="work_title">
                     <img src="img/lollipop.svg">
-                    鋼筆插畫
+                    插畫設計-penDraw
                     <img class="Lollipop" src="img/lollipop.svg">
                 </h1>
             </div>
@@ -55,7 +55,7 @@
             <div class="row text-center">
                 <h1 class="work_title">
                     <img src="img/lollipop.svg">
-                    插畫
+                    插畫設計-paint
                     <img class="Lollipop" src="img/lollipop.svg">
                 </h1>
             </div>
@@ -161,43 +161,7 @@
         hippo.innerHTML=hippoHtml;
         hippoDemo.innerHTML=hippoDemoHtml;
         
-    
-     // paint
 
-     res.data.paint.forEach(item => {
-            paintHtml+=`<div class="col-12 col-sm-6 col-lg-4 work_item"  data-bs-toggle="collapse" data-bs-target="#${item.id}">
-                    <div class="work_illust">
-                        <img src="img/drawWork/${item.img}" alt="">
-                    </div>
-                    <div class="text-center">
-                        <h3 class="work_p">${item.title}</h3>
-                        <div class="pink_line">
-
-                        </div>
-                    </div>
-                    
-                </div>`
-            paintDemoHtml+=`
-                <div id="${item.id}" class="Card collapse" >
-                    <img src="img/close.svg" alt="" onclick="closeCard('${item.id}');" class="CardClose">
-                    <div class="card_row">
-                        <div class="CardLargeImg">
-                            <img src="img/drawWork/${item.img}" alt="">
-                        </div>
-                        <div class="CardTitle">
-                            <h3>${item.title}</h3>
-                        </div>
-                    </div>
-
-                </div>
-                
-            `
-        });
-        paint.innerHTML=paintHtml;
-        paintDemo.innerHTML=paintDemoHtml;
-
-
-        
         
     //penDraw
     
@@ -234,6 +198,40 @@
         penDraw.innerHTML=penDrawHtml;
         penDrawDemo.innerHTML=penDrawDemoHtml;
   
+
+     // paint
+
+        res.data.paint.forEach(item => {
+            paintHtml+=`<div class="col-12 col-sm-6 col-lg-4 work_item"  data-bs-toggle="collapse" data-bs-target="#${item.id}">
+                    <div class="work_illust">
+                        <img src="img/drawWork/${item.img}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="work_p">${item.title}</h3>
+                        <div class="pink_line">
+
+                        </div>
+                    </div>
+                    
+                </div>`
+            paintDemoHtml+=`
+                <div id="${item.id}" class="Card collapse" >
+                    <img src="img/close.svg" alt="" onclick="closeCard('${item.id}');" class="CardClose">
+                    <div class="card_row">
+                        <div class="CardLargeImg">
+                            <img src="img/drawWork/${item.img}" alt="">
+                        </div>
+                        <div class="CardTitle">
+                            <h3>${item.title}</h3>
+                        </div>
+                    </div>
+
+                </div>
+                
+            `
+        });
+        paint.innerHTML=paintHtml;
+        paintDemo.innerHTML=paintDemoHtml;
 
 
 
