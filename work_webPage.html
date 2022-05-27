@@ -30,7 +30,7 @@
        
     </div>
 
-    <div id="footer" class="fixedFooter">
+    <div id="footer">
         Copyright © 2022 Julia. All rights reserved
     </div>
 </body>
@@ -39,9 +39,6 @@
 <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="js/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.min.js"></script>
-<script src="js/gsap.min.js"></script>
-<script src="js/ScrollTrigger.min.js"></script>
-<script src="js/CSSRulePlugin.min.js"></script>
 <script src="js/index.js"></script>
 
 <script>
@@ -59,11 +56,7 @@
 
         PageHtml+=`<div class="row">
             <div class="col-2D-pict">
-                <div style="height:auto">
-                    <div class="por">${pageFn.video}</div>
-                    <img src="img/Web/${pageFn.img}" alt="">
-                </div>
-                
+                <img src="img/Web/${pageFn.img}" alt="">
             </div>
             <div class="col-2d-context">
                 <h2>${pageFn.title}</h2>
@@ -77,8 +70,7 @@
 
         Page.innerHTML=PageHtml;
 
-        let anim1=gsap.timeline();
-        anim1.from(".col-2d-context *", {autoAlpha:0, x:-100, duration: 0.8});
+
         
      })
     
