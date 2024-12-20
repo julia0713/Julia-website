@@ -49,6 +49,24 @@
             
     "WebData":[
         {
+            "id": "web7",
+            "title": "Wuwow官網翻新",
+            "video": "",
+            "img":"introduction/wuwowWeb.jpg",
+            "content":
+             "<p>專案介紹大綱專案背景：WUWOWJR專注於兒童的線上英文教育，適合 3 至 12 歲 的學齡兒童，目標是透過互動和趣味學習方式，讓孩子建立良好的英文學習基礎。專案目標與目的:Ｗuwow jr 為10~15歲孩童</p>",
+            "url": "<a href='https://iestate.tech/'>期待現場展示</a>"
+        },
+        {
+            "id": "web6",
+            "title": "Wuwow Junior學員系統改版",
+            "video": "",
+            "img":"introduction/JrIntroduction.jpg",
+            "content":
+             "<p>專案介紹大綱專案背景：WUWOWJR專注於兒童的線上英文教育，適合 3 至 12 歲 的學齡兒童，目標是透過互動和趣味學習方式，讓孩子建立良好的英文學習基礎。專案目標與目的:Ｗuwow jr 為10~15歲孩童</p>",
+            "url": "<a href='https://iestate.tech/'>期待現場展示</a>"
+        },
+        {
             "id": "web1",
             "title": "iEstate土斯債權｜不動產P2P借貸媒合平台",
             "video": "",

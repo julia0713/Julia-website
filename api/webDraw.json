@@ -76,11 +76,6 @@
             "id":"webdraw13"
         },
         {
-            "img": "paint/paint-flowerwoman.png",
-            "title": "花朵女人",
-            "id":"webdraw14"
-        },
-        {
             "img": "paint/paint-rhino.jpg",
             "title": "異世界",
             "id":"webdraw15"
@@ -89,16 +84,6 @@
             "img": "paint/paint-taiwan.jpg",
             "title": "台灣插畫世界",
             "id":"webdraw16"
-        },
-        {
-            "img": "paint/paint-elf.png",
-            "title": "精靈朋友",
-            "id":"webdraw17"
-        },
-        {
-            "img": "paint/paint-Wukong.png",
-            "title": "悟空朋友",
-            "id":"webdraw18"
         },
         {
             "img": "paint/paint-chickenRice.png",

@@ -35,23 +35,9 @@
                 "id": "graphic6"
             }
             
-        ],
-
-        "graphicCreat":[
-            
-             {
-                "img": "cover/digitalflower.jpg",
-                "title": "數據花",
-                "id": "graphic7"
-            },
-            {
-                "img": "cover/mimosapudicaPoster.jpg",
-                "title": "含羞草",
-                "id": "graphic8"
-            }
-            
-            
         ]
+
+    
 
 
 }
