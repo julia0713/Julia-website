@@ -54,16 +54,17 @@
             "video": "",
             "img":"introduction/wuwowWeb.jpg",
             "content":
-             "<p>專案介紹大綱專案背景：WUWOWJR專注於兒童的線上英文教育，適合 3 至 12 歲 的學齡兒童，目標是透過互動和趣味學習方式，讓孩子建立良好的英文學習基礎。專案目標與目的:Ｗuwow jr 為10~15歲孩童</p>",
-            "url": "<a href='https://www.wuwow.tw/'>前往網站</a>"
+             "<p>【專案背景】<br>WUWOW 是一個專注於線上英文教育十年B2C品牌，全球化的師資團隊提供課程一對一一對多的教學服務。結合多元自製英文教材 日常生活、旅遊、職場以及專業場合題材，滿足學員各方面英文學習需求。<br><br>【專案目標】<br>1.提升量體名單 <br>2.提升SEO<br>3.品牌風格重塑<br><br>【專案貢獻】<br>1.Mock up<br>2.User flow<br>3.跨部門溝通橋樑<br>4.進度追蹤<br>5.後台功能規劃<br>6.審核網站（功能、畫面）<br><br>【專案成果】<br>1.填單率提升10%<br>2.提升網頁效能跑分<br>3.埋入Clarity 使用者行為追蹤<br>4.品牌新形象</p>",
+            "url": "<a href='https://www.wuwow.tw/'>前往Wuwow官網</a>"
         },
         {
             "id": "web6",
             "title": "Wuwow Junior學員系統改版",
-            "video": "",
+            "video": "<video id='JRVideo'  autoplay muted loop><source src='video/JRVideo.mp4'movie.mp4' type='video/mp4'></video>",
             "img":"introduction/JrIntroduction.jpg",
             "content":
-             "<p>專案介紹大綱專案背景：WUWOWJR專注於兒童的線上英文教育，適合 3 至 12 歲 的學齡兒童，目標是透過互動和趣味學習方式，讓孩子建立良好的英文學習基礎。專案目標與目的:Ｗuwow jr 為10~15歲孩童</p>",
+             "<p>【專案背景】<br>WUWOWJR 專注於兒童的線上英文教育，適合 5 至 12 歲的學齡兒童。目標是透過互動和趣味的學習方式，幫助孩子建立良好的英文學習基礎<br><br>【負責項目】<br>1製作 Mockup 以及動態特效<br>2製作流程圖<br>3撰寫設計文件<br>4. 審核前端畫面，撰寫文件紀錄待修正項目<br><br>【個人貢獻】<br>1.在專案中的角色與責任設計師、行銷與技術部門溝通橋樑 ，將厲害關係人所提出的虛求進行溝通，評估功能重要程度去奠定調整優化優先順序。<br>2.專案經理與設計師以及技術長共同討論產品框架以及可行性在功能輪廓下，發散個人想法以及提出尚未考量的的可能性上給予優化建議，讓整體使用流程體驗可以更加完整。</p>",
+
             "url": null
         },
         {
