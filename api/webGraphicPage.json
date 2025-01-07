@@ -91,24 +91,8 @@
             "img":"introduction/ProgroupWebintrduction.jpg",
             "content": "<p>此次設計風格客戶希望走向為活潑與創意，將結合較多動畫效果，與一般制式化律師官網做出風格上的差異化。</p><p>【設計理念】<br>Landing page構想：這社會就像一座小島，只要有兩人以上的人在這座小島上，就會有所謂的“規則”來規範這個世界，而規則就是現實世界的“法律”，如何調解或讓人理解規則並是博群事務所所能提供之服務。</p>",
             "url": "<a href='http://progroup.law/'>網站連結</a>"
-        },
-        {
-            "id": "web4",
-            "title": "BNI官網",
-            "video": "",
-            "img":"introduction/BNIWebIntroduction.jpg",
-            "content": "<p>【品牌】<br>BNI成立於1985年，是一家全球性且經過驗證的商業網絡組織。 我們的會員都是專業的商務人士，他們經由對我們的主要核心價值，並幫助彼此發展事業。而『磐鈺分會』隸屬於BNI台中地區的分會之一，目前會員人數已有60+位，在未來持續擴張會員。</p><p>【設計理念】<br>此次設計規劃將延伸品牌LOGO與主色系結合至網頁，讓商務類型的網站也可以與設計風格做結合。</p>",
-            "url": "<a href='https://gotoo.co/demo/ruru/panyu/dev/index.html'>網站連結</a>"
-        },
-        {
-            "id": "web5",
-            "title": "搞運彩",
-            "video": "",
-            "img":"introduction/dosportWebiestaeWebintroduction.jpg",
-            "content": "<p>搞運彩提供了，四種球類運動，20+聯盟，1000+球隊，提供即時對戰資訊、歷史數據、即時比分等完整資訊給使用者作為參考。再透過平臺提供資訊進行預測之動作，若預測取得高勝率就可以成為大神，並開始販售預測資訊。</p><p>網站陽壽已盡</p>",
-            "url": "<a href='https://zpl.io/bP1ZRNl'>陽壽已盡，請觀看設計圖</a>"
         }
-
+    
     ]
 
 }
