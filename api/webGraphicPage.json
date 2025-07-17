@@ -49,17 +49,26 @@
             
     "WebData":[
         {
+            "id": "web8",
+            "title": "醫療HIS系統 Design System維護",
+            "video": "",
+            "img":"introduction/HISDesignsystem.png",
+            "content":
+             "<p>做design system介紹</p>",
+            "url": "<a href='https://www.wuwow.tw/'>前往Wuwow官網</a>"
+        },
+        {
             "id": "web7",
-            "title": "Wuwow官網翻新",
+            "title": "Wuwow 線上成人官網翻新",
             "video": "",
             "img":"introduction/wuwowWeb.jpg",
             "content":
-             "<p>【專案背景】<br>WUWOW 是一個專注於線上英文教育十年B2C品牌，全球化的師資團隊提供課程一對一一對多的教學服務。結合多元自製英文教材 日常生活、旅遊、職場以及專業場合題材，滿足學員各方面英文學習需求。<br><br>【專案目標】<br>1.提升量體名單 <br>2.提升SEO<br>3.品牌風格重塑<br><br>【專案成果】<br>1.填單率提升10%<br>2.提升網頁效能跑分<br>3.埋入Clarity 進行使用者行為追蹤<br>4.打造品牌全新企業形象，提升在市場的知名度<br>5.建立後台動態資料，大幅減少跨部門溝通成本<br><br>【專案貢獻】<br>1.Mock up<br>2.User flow<br>3.跨部門溝通橋樑<br>4.進度追蹤<br>5.後台功能規劃<br>6.審核網站（功能、畫面）</p>",
+             "<p>【專案背景】<br>WUWOW 是一個專注於線上英文教育十年B2C品牌，全球化的師資團隊提供課程一對一一對多的教學服務。結合多元自製英文教材 日常生活、旅遊、職場以及專業場合題材，滿足學員各方面英文學習需求。<br><br>【專案目標】<br>1.提升量體名單 <br>2.提升SEO<br>3.品牌風格重塑<br><br>【專案成果】<br>1.填單率提升10%<br>2.提升網頁效能跑分<br>3.埋入Clarity 進行使用者行為追蹤<br>4.打造品牌全新企業形象，提升在市場的知名度<br>5.建立後台動態資料，大幅減少跨部門溝通成本<br><br>【專案貢獻】<br>1.Mock up<br>2.Design Guidline<br>3.跨部門溝通橋樑<br>4.進度追蹤<br>5.後台功能規劃<br>6.審核網站（功能、畫面）</p>",
             "url": "<a href='https://www.wuwow.tw/'>前往Wuwow官網</a>"
         },
         {
             "id": "web6",
-            "title": "Wuwow Junior學員系統改版",
+            "title": "Wuwow Junior 線上兒童英文系統改版",
             "video": "<video id='JRVideo'  autoplay muted loop><source src='video/JRVideo.mp4'movie.mp4' type='video/mp4'></video>",
             "img":"introduction/JrIntroduction.jpg",
             "content":
@@ -80,7 +89,7 @@
             "title": "iEstate土斯債權｜不動產P2P借貸媒合平台",
             "video": "",
             "img":"introduction/iestaeWebintroduction.jpg",
-            "content": "<p>【 負責事項 】<br>⊡ 與客戶溝通確認需求<br>⊡ 撰寫需求文件<br>⊡ User Flow規劃<br>⊡ Mockup<br>⊡ 後台參與規<br>⊡ 功能測試並撰寫修改文件列表</p>",
+            "content": "<p>【 專案背景 】<br>土斯債權 P2B土地債權媒合平台以「有土斯有財」為核心理念，專注於危老及都更建案，採用創新的交易模式，連結B端建案資金需求與P端個人投資需求。平台致力於解決建商資金不足問題，提供穩健安全的投資選項，並推動城市更新與發展。透過整合資源，實現建商、投資人與城市三贏的目標，打造全新的土地債權投資模式，為傳統地產融資帶來全新風貌。<br>【 負責事項 】<br>⊡ 與客戶溝通確認需求<br>⊡ 撰寫需求文件<br>⊡ User Flow規劃<br>⊡ Mockup<br>⊡ 後台參與規劃<br>⊡ 工程協調溝通<br>⊡ 功能測試並撰寫修改文件列表</p>",
             "url": null
         },
        
