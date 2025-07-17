@@ -54,8 +54,9 @@
             "video": "",
             "img":"introduction/HISDesignsystem.png",
             "content":
-             "<p>做design system介紹</p>",
-            "url": "<a href='https://www.wuwow.tw/'>前往Wuwow官網</a>"
+             "<p>針對早期元件缺乏統一規範、內容分散混亂、使用情境不明確等問題，導入系統化 Design System 架構。<br>以原子設計（Atomic Design）概念重新建構元件階層，釐清元件命名邏輯、使用情境與版面規則，提升設計一致性與可重用性。<br><br>透過 Figma Plugin 協助整理並維護元件與 Style 樣式，補齊缺少的色彩、字體與間距規範，並補充元件使用說明與場景文件，建立完善的設計參考資料。<br>此舉不僅有效減少設計錯誤與重工風險，也大幅提升設計與維護效率，讓團隊能快速找到並正確套用元件，確保醫療資訊系統在多角色、多場景下皆具高一致性與高可用性。</p>",
+
+            "url": null
         },
         {
             "id": "web7",
