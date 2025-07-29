@@ -49,6 +49,16 @@
             
     "WebData":[
         {
+            "id": "web9",
+            "title": "門診藥局系統",
+            "video": "",
+            "img":"introduction/OutpatientPharmacy.png",
+            "content":
+             "<p><br>【專案背景】本專案為一間即將開幕的大型醫院進行門診藥局的整體規劃與設計， 以確保藥品調劑流程、空間配置及營運動線能夠達到高效與安全的標準。<br><br>【專案負責】<br>1.資料文獻查找<br>2.使用者訪談和分析<br>3.內容規劃  <br>4.介面設計 Mockup<br>5.產品提案<br><br>【專案目標】<br>1.審藥處方呈現重要警示提示<br>2.結合智能審藥<br>3.提供完整病患資訊判斷用藥安全<br>4.提供藥品多樣式給使用者切換</p>",
+
+            "url": null
+        },
+        {
             "id": "web8",
             "title": "醫療HIS系統 Design System維護",
             "video": "",

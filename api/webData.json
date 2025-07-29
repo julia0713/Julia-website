@@ -1,4 +1,10 @@
 [
+     {
+        "img": "cover/HISCover.jpg",
+        "title": "門診藥局系統",
+        "date": "2025",
+        "id": "web9"
+    },
     {
         "img": "cover/HISCover.jpg",
         "title": "醫療HIS Design System維護",
