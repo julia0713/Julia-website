@@ -10,8 +10,68 @@
     <title>Julia Design</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
+    <!-- 加入 slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- jQuery (Slick 需要 jQuery 支援) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 加入 slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+  $(document).ready(function(){
+    $('.responsive').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YLB2J7V3Y"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: true
+        });
+    });
+    </script>
+
     <!-- clarity安裝追蹤碼 -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -83,10 +143,10 @@
             
         </div>
         
-       
-        
-    </div>
 
+    </div>
+    
+   
     <div class="mainIndex2 ">
         <div class="work_container">
             <div class="row resume">
@@ -128,45 +188,75 @@
                 </h1>
             </div>
 
-            <div class="experience">
-                <h2>UIUX Desiger</h2>
-                <h3>漢民科技股份有限公司</h3>
-                <p>任職時間 2025-3~目前</p>
-                <p>
-                    負責醫療資訊系統專案擔任 UI/UX 設計師
-                    <br>-協助統籌專案需求，負責提案以及會議紀錄撰寫
-                    <br>-進行使用者訪談與流程釐清，理解實務痛點並提出設計優化方向
-                    <br>-重新統整 Design System 文件，明確定義元件結構與維護方式，並提供實作範例協助團隊落實使用
-                    <br>-介面設計流程，產出User Flow 、Wireframe、Mockup
-                    <br>
-                    <br>【專案】
-                    <br>藥品基本檔
-                    <br>藥局系統
-                    <br>藥庫系統
-                    <br>交互作用、LASA系統
-                </p>
-                <br>
-                <h2>UIUX Desiger</h2>
-                <h3>六書堂數位學習</h3>
-                <p>任職時間 2022-6~2024-08</p>
-                <p>
-                    當前在一家英語線上教育的公司擔任 UI/UX 設計師。在這個角色中，不僅專注於提供介面設計，還經常與跨部門團隊密切合作，以確保公司能夠實現每季度的 OGSM 目標。作為團隊中的一員，是部門中的開心果，透過活躍氣氛和建立積極的工作環境來促進團隊的凝聚力和創造力。
 
-                    <br><br>【產品開發 - 3官網 3系統 10+活動頁】
-                    <br>1.優化線上成人和兒童品牌官網以及老師招募官網，提供更有用資訊內容以及全新品 牌形象
-                    <br>2.建制文章專區提升官網seo和以及單量
-                    <br>3.建置 職能專案官網和電商，擴大公司多元性收入管道
-                    <br>4.兒童英文專案遊戲化，建置領養寵物機制提升產品競爭力以及學生上課率
-                    <br>5.協助企劃設計活動Landing page 來達到公司年度單量目標
+            <div class="responsive">
+                
+                <div class="experience">
+                    <h2>漢民科技股份有限公司</h2>
+                    <h3>UIUX Desiger</h3>
+                    <p>任職時間 2025-3~目前</p>
+                    <p>
+                        在醫療資訊系統擔任 UI/UX 設計師
+                        <br>-協助統籌專案需求並規劃，並負責專案提案
+                        <br>-進行使用者訪談與流程釐清，理解實務痛點並提出設計優化方向
+                        <br>-重新統整 Design System 文件，明確定義元件結構與維護方式，並提供實作範例協助團隊落實使用
+                        <br>-介面設計流程，產出User Flow、Mockup
+                        <br>
+                        <br>【專案】
+                        <br>藥品基本檔
+                        <br>藥局系統
+                        <br>藥庫系統
+                        <br>交互作用、LASA系統
+                    </p>
+                    <a href="work_webPage.html?web9" class="workbutton">門診藥局系統</a>
+                    <a href="work_webPage.html?web8" class="workbutton">醫療系統 Design System</a>
+                </div>
+                
+                <div class="experience">
+                    <h2>六書堂數位學習</h2>
+                    <h3>UIUX Desiger</h3>
+                    <p>任職時間 2022-6~2024-08</p>
+                    <p>
+                        當前在一家英語線上教育的公司擔任 UI/UX 設計師。在這個角色中，不僅專注於提供介面設計，還經常與跨部門團隊密切合作，以確保公司能夠實現每季度的 OGSM 目標。作為團隊中的一員，是部門中的開心果，透過活躍氣氛和建立積極的工作環境來促進團隊的凝聚力和創造力。
 
-                    <br><br>【流程和導入】
-                    <br>1.為產品導入微軟 Clarity 進行使用者行為追蹤和分析
-                    <br>2.後期透過導入Weflow建置Landing page 模組化，大幅提升產出效率
-                    <br>3.為公司導入Figma軟體開發，大幅提升合作和開發效率
-                    <br>4.為公司個品牌產品建立相對應Design Guideline和元件
-                    <br>5.作為行銷部門工程部門窗口，與工程師溝通協作討論產品開發可行性，並審核產品產出品質
-                </p>
+                        <br><br>【產品開發 - 3官網 3系統 10+活動頁】
+                        <br>1.優化線上成人和兒童品牌官網以及老師招募官網，提供更有用資訊內容以及全新品 牌形象
+                        <br>2.建制文章專區提升官網seo和以及單量
+                        <br>3.建置 職能專案官網和電商，擴大公司多元性收入管道
+                        <br>4.兒童英文專案遊戲化，建置領養寵物機制提升產品競爭力以及學生上課率
+                        <br>5.協助企劃設計活動Landing page 來達到公司年度單量目標
+
+                        <br><br>【流程和導入】
+                        <br>1.為產品導入微軟 Clarity 進行使用者行為追蹤和分析
+                        <br>2.透過Weflow 建置Landing page模組化，大幅提升產出效率
+                        <br>3.為公司導入Figma軟體開發，大幅提升合作和開發效率
+                        <br>4.為公司個品牌產品建立相對應Design Guideline和元件
+                        <br>5.作為行銷部門工程部門窗口，與工程師溝通協作討論產品開發可行性，並審核產品產出品質
+                    </p>
+                    <a href="work_webPage.html?web6" class="workbutton">線上兒童英文系統改版</a>
+                    <a href="work_webPage.html?web7" class="workbutton">線上成人官網翻新</a>
+                    
+                </div>
+                
+
+                <div class="experience">
+                    <h2>跳跳股份有限公司</h2>
+                    <h3>UIUX Desiger</h3>
+                    <p>任職時間 2020/12~2022/3</p>
+                    <p>
+                        跳跳為接案類型小型網頁設計公司，在公司職位為UIUX Designer，執行了三個官網以及P2P借貸平台，除了UIUX Design也包含了產品的CIS設計。<br><br>因為小型設計公司，有時將會身兼多職需要第一線與客戶確認需求，並在時程內產出User Flow、Mock up。在不同專案不管是在時程控管、客戶溝通、創意發想還是前端工程師溝通功能實作，都是在此環境所累積的實戰經驗。<br><br>【產品開發 - 3形象官網 1系統 2平面】<br>1.P2P金融借貸平台<br>2.公廟、律師官網<br>3.律師、商會 CIS Design<br><br>【技能】<br>1.CIS設計<br>2.與客戶溝通確認需求並撰寫需求文件<br>3.User Flow<br>4.Mock up產出 撰寫動畫註解<br>5.大量研究並搜集前端特效<br>6.測試並撰寫檢核表
+                    </p>
+                    <a href="work_webPage.html?web2" class="workbutton">鎮瀾宮官網</a>
+                    <a href="work_webPage.html?web1" class="workbutton">不動產P2P借貸媒合平台</a>
+                </div>
+        
             </div>
+
+            
+
+
+
+            
         </div>
     
         <div class="row text-center">
@@ -177,8 +267,10 @@
             </h1>
         </div>
         <div class="row" style="margin-bottom: 60px;">
+            <div class="col-12 col-sm-6 col-lg-4 p-0"><a href="work_webPage.html?web9"><img class="w-100" src="img/Web/cover/OutpatientPharmacyCover.png" alt="門診藥局系統"></a></div>
+            
             <div class="col-12 col-sm-6 col-lg-4 p-0"><a href="work_webPage.html?web6"><img class="w-100" src="img/Web/cover/JRCover.jpg" alt="Wuwow Junior學員系統改版"></a></div>
-            <div class="col-12 col-sm-6 col-lg-4 p-0"><a href="work_webPage.html?web7"><img class="w-100" src="img/Web/cover/wuwowWebCover.jpg" alt="Wuwow官網翻新"></a></div>
+        
             <div class="col-12 col-sm-6 col-lg-4 p-0"><a href="work_webPage.html?web2"><img class="w-100" src="img/Web/cover/TempleWebCover.jpg" alt="鎮瀾宮官網"></a></div>
         </div>
     </div>

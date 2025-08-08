@@ -1,36 +1,42 @@
 [
      {
         "img": "cover/OutpatientPharmacyCover.png",
+        "category": "系統規劃",
         "title": "門診藥局系統",
         "date": "2025",
         "id": "web9"
     },
     {
         "img": "cover/HISCover.jpg",
+        "category": "UI設計",
         "title": "醫療HIS Design System維護",
         "date": "2025",
         "id": "web8"
     },
     {
         "img": "cover/JRCover.jpg",
+        "category": "UIUX",
         "title": "Wuwow Junior學員系統改版",
         "date": "2024",
         "id": "web6"
     },
     {
         "img": "cover/wuwowWebCover.jpg",
+        "category": "官網設計",
         "title": "Wuwow官網翻新",
         "date": "2023",
         "id": "web7"
     },
     {
         "img": "cover/TempleWebCover.jpg",
+        "category": "特效官網設計",
         "title": "鎮瀾宮官網",
         "date": "2022",
         "id": "web2"
     },
     {
         "img": "cover/iEstateWebCover.jpg",
+        "category": "產品系統開發",
         "title": "iEstate｜不動產P2P借貸媒合平台",
         "date": "2022",
         "id": "web1"
@@ -38,6 +44,7 @@
   
     {
         "img": "cover/ProgroupWebCover.jpg",
+        "category": "特效官網設計",
         "title": "律師官網",
         "date": "2022",
         "id": "web3"
