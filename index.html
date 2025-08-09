@@ -8,11 +8,14 @@
     <meta property="og:description" content="花費四年生命打造作品網站">
     <meta property="og:image" content="img/metaImageHomepage">
     <title>Julia Design</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>    
+
     <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
     <!-- 加入 slick CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+ 
 
     <!-- jQuery (Slick 需要 jQuery 支援) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -21,19 +24,35 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
+function equalheight() {
+    $('.slider').each(function (index) {
+        var maxHeight = 0;
+        $(this).find('.slick-slide').height('auto');
+        $(this).find('.slick-slide').each(function (index) {
+            if ($(this).height() > maxHeight)
+                maxHeight = $(this).height();
+        });
+        $(this).find('.slick-slide').height(maxHeight);
+    });
+}
+// slider 
+$('.slider').on('init', function(event, slick){
+  equalheight();
+});
   $(document).ready(function(){
     $('.responsive').slick({
       dots: true,
       infinite: true,
-      speed: 300,
+      autoplay: true,
+      autoplaySpeed: 3000,
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
           }
@@ -56,7 +75,6 @@
     });
   });
 </script>
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YLB2J7V3Y"></script>
@@ -149,37 +167,6 @@
    
     <div class="mainIndex2 ">
         <div class="work_container">
-            <div class="row resume">
-                <div class="col-30PA">
-                    
-                    <img class="cloud1" src="img/cloud_top.png" alt="">
-                    <img class="cloud2" src="img/cloud_top.png" alt="">
-                    <img class="juliaImg" src="img/julia_pic.png" alt="Julia大頭照">
-                    <img class="cloud3" src="img/cloud_bottom.png" alt="">
-                </div>
-                <div class="col-70PA">
-                    <div class="resumeTitle">
-                        <h5>我的簡介</h5>
-                    </div>
-                    <div class="resumeContent">
-                       <h3>HI! 我是Julia - 喜歡有挑戰有趣的設計</h3>
-                        <p>
-                            <br>【關於設計】<br>不管在視覺特效互動上，或是洞察使用者需求，除了能帶給使用者良好的使用體驗，也可以同時達成企業的關鍵目標。
-                            <br><br>【處事溝通】<br>面對各個利害關係人善於換位思考，從不同角度去理解他人思考路線提出建議去解決問題。
-                            <br><br>【未知探索力】<br>喜歡挖掘各種工具或知識，一挖到真的很棒的工具將會分享給團隊的人並導入執行流程提升合作效率。
-                            <br>－－－－－－－－－－－－－－－
-                            <br>✿有插畫底子的設計師
-                            <br>✿擁有產品思維了解商業與用戶設計之間的權衡
-                            <br>✿探索未知並執行                    
-                        </p>
-                        <p>
-                        目前線階段積極研究user reaserch領域，持續大量閱讀相關知識、參加工作坊，為了讓產品提高使用者對產品高滿意度。
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-
             <div class="row text-center">
                 <h1 class="work_title">
                     <img src="img/lollipop.svg">
@@ -187,10 +174,7 @@
                     <img class="Lollipop" src="img/lollipop.svg">
                 </h1>
             </div>
-
-
             <div class="responsive">
-                
                 <div class="experience">
                     <h2>漢民科技股份有限公司</h2>
                     <h3>UIUX Desiger</h3>
@@ -199,8 +183,8 @@
                         在醫療資訊系統擔任 UI/UX 設計師
                         <br>-協助統籌專案需求並規劃，並負責專案提案
                         <br>-進行使用者訪談與流程釐清，理解實務痛點並提出設計優化方向
-                        <br>-重新統整 Design System 文件，明確定義元件結構與維護方式，並提供實作範例協助團隊落實使用
-                        <br>-介面設計流程，產出User Flow、Mockup
+                        <br>-重新統整 Design System 文件，明確定義元件結構與維護方式
+                        <br>-產出User Flow、Mockup
                         <br>
                         <br>【專案】
                         <br>藥品基本檔
@@ -217,7 +201,7 @@
                     <h3>UIUX Desiger</h3>
                     <p>任職時間 2022-6~2024-08</p>
                     <p>
-                        當前在一家英語線上教育的公司擔任 UI/UX 設計師。在這個角色中，不僅專注於提供介面設計，還經常與跨部門團隊密切合作，以確保公司能夠實現每季度的 OGSM 目標。作為團隊中的一員，是部門中的開心果，透過活躍氣氛和建立積極的工作環境來促進團隊的凝聚力和創造力。
+                        當前在一家英語線上教育的公司擔任 UI/UX 設計師。不僅專注於提供介面設計，還跨部門合作共同奠定指標，以確保團隊指標可以達成公司目標。在團隊中是部門中的開心果，透過活躍氣氛和建立積極的工作環境來促進團隊的凝聚力和創造力。
 
                         <br><br>【產品開發 - 3官網 3系統 10+活動頁】
                         <br>1.優化線上成人和兒童品牌官網以及老師招募官網，提供更有用資訊內容以及全新品 牌形象
@@ -252,17 +236,49 @@
         
             </div>
 
-            
+
+
+            <div class="row resume">
+                <div class="col-30PA">
+                    
+                    <img class="cloud1" src="img/cloud_top.png" alt="">
+                    <img class="cloud2" src="img/cloud_top.png" alt="">
+                    <img class="juliaImg" src="img/julia_pic.png" alt="Julia大頭照">
+                    <img class="cloud3" src="img/cloud_bottom.png" alt="">
+                </div>
+
+                
+                <div class="col-70PA">
+                    <div class="resumeTitle">
+                        <h5>我的簡介</h5>
+                    </div>
+                    <div class="resumeContent">
+                       <h3>HI! 我是Julia - 喜歡有挑戰有趣的設計</h3>
+                        <p>
+                            <br>【關於設計】<br>不管在視覺特效互動上，或是洞察使用者需求，除了能帶給使用者良好的使用體驗，也可以同時達成企業的關鍵目標。
+                            <br><br>【處事溝通】<br>面對各個利害關係人善於換位思考，從不同角度去理解他人思考路線提出建議去解決問題。
+                            <br><br>【未知探索力】<br>喜歡挖掘各種工具或知識，一挖到真的很棒的工具將會分享給團隊的人並導入執行流程提升合作效率。
+                            <br>－－－－－－－－－－－－－－－
+                            <br>✿有插畫底子的設計師
+                            <br>✿擁有產品思維了解商業與用戶設計之間的權衡
+                            <br>✿探索未知並執行                    
+                        </p>
+                        <p>
+                        目前線階段積極研究user reaserch領域，持續大量閱讀相關知識、參加工作坊，為了讓產品提高使用者對產品高滿意度。
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
 
 
 
-            
         </div>
     
         <div class="row text-center">
             <h1 class="work_title">
                 <img src="img/lollipop.svg">
-                近期專案
+                精選專案
                 <img class="Lollipop" src="img/lollipop.svg">
             </h1>
         </div>

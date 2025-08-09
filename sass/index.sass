@@ -84,6 +84,11 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
         color: $pink
         margin-bottom: 10px
         z-index: 2
+
+        @media screen and (max-width: 400px)
+            font-size: 16px    
+
+
     .circle h5
         font-size: 14px
         color: $red
@@ -110,6 +115,8 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
             height: 110px
             border: solid 21px rgba(255,255,255,0.3)
             font-size: 16px
+    
+    
     .mainBox    
         h1  
             font-weight: 900
@@ -118,15 +125,22 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
             position: relative
             margin-top: 40px
             z-index: 2
+            @media screen and (max-width: 400px)
+                font-size: 32px
+
+
         h2  
+
             font-weight: 900
             font-size: 24px
             color: $dark_red
             position: relative
             margin-top: 0px
             z-index: 2
-        
-        
+
+            @media screen and (max-width: 400px)
+                font-size: 15px
+
 
         display: flex
         height: calc(100vh - 60px)
@@ -201,9 +215,9 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
         // @media screen and ( min-width: 500px ) and (max-height: 730px)
         //     height: 68vh
         @media screen and ( min-width: 576px )
-            height: 70vh
+            height: 60vh
         @media screen and ( min-width: 768px )
-            height: 75vh
+            height: 60vh
         @media screen and ( min-width: 992px )
             height: 90vh
             
@@ -316,10 +330,10 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
         color: #828282
         z-index: 99
 .experience
-    padding: 60px 0px 60px 0px
+    padding: 20px 16px
 
     @media screen and (min-width: 992px)
-        padding: 60px 400px 60px 60px
+        padding: 40px
 
         h2
             color: #cb5454
@@ -374,8 +388,8 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
     width: 100%
     margin-right: auto
     margin-left: auto
-    padding-left: 16px
-    padding-right: 16px
+    padding: 100px 16px 0px 16px
+    // padding-right: 16px
     @media screen and ( min-width: 768px )
         padding-left: 44px
         padding-right: 44px
@@ -403,13 +417,14 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
     background-attachment: fixed
  
 .work_title
-    margin-top: 50px
-    margin-bottom: 50px
+    margin-top: 100px
+    margin-bottom: 20px
     font-size: 0
     font-size: $ft-t1
     font-weight: 900
     color: $black
-    letter-spacing: 0.2em
+    letter-spacing: 0.2em 
+
 
 .work_body
     
@@ -882,7 +897,123 @@ $bg_color: linear-gradient(180deg, rgba(252, 241, 225, 0.8) 0%, rgba(255, 230, 2
     left: 51.5%
     transform: translateX(-50%)
     width: 58.5%
+
+
+/* Arrows
+
+.slick-prev, .slick-next
+  font-size: 0
+  line-height: 0
+  position: absolute
+  top: 30%
+  display: block
+  width: 20px
+  height: 20px
+  padding: 0
+  -webkit-transform: translate(0, -50%)
+  -ms-transform: translate(0, -50%)
+  transform: translate(0, -50%)
+  cursor: pointer
+  color: transparent
+  border: none
+  outline: none
+  background: transparent
+
+.slick-prev
+  &:hover, &:focus
+    color: transparent
+    outline: none
+    background: transparent
+
+.slick-next
+  &:hover, &:focus
+    color: transparent
+    outline: none
+    background: transparent
+
+.slick-prev
+  &:hover:before, &:focus:before
+    opacity: 1
+
+.slick-next
+  &:hover:before, &:focus:before
+    opacity: 1
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+  opacity: .25
+
+.slick-prev:before, .slick-next:before
+  font-family: 'slick'
+  font-size: 36px
+  line-height: 1
+  opacity: .75
+  color: white
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.slick-prev
+  left: -25px
+
+[dir='rtl'] .slick-prev
+  right: -25px
+  left: auto
+
+.slick-prev:before
+  content: '←'
+
+[dir='rtl'] .slick-prev:before
+  content: '→'
+
+.slick-next
+  right: -25px
+
+[dir='rtl'] .slick-next
+  right: auto
+  left: -25px
+
+.slick-next:before
+  content: '→'
+
+[dir='rtl'] .slick-next:before
+  content: '←'
+
+
+.workbutton
+  display: inline-block
+  padding: 6px 12px
+  margin: 0px 10px 10px 0px
+  background-color: #ffb1b1
+  color: white
+  text-decoration: none
+  font-size: 16px
+  border: none
+  border-radius: 20px
+
+  /* 圓角
+  transition: background-color 0.3s ease
+  cursor: pointer
+
+  &:hover
+    background-color: #ee9898u
+    color: white
+
         
-   
+.slick-initialized .slick-slide
+ background-color: rgba(255, 255, 255, 0.4)
+ border-radius: 40px
+ margin: 10px
+
+.slick-prev
+    left: -10px
+.slick-next
+    right: 10px
+
+.slick-dots li button:before
+    font-size: 12px
+
+.slick-dots li.slick-active button:before
+    color: #ae4949
+.slick-dots li button:before
+    color: #ae4949
 
     
